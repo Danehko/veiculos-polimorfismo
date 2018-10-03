@@ -6,7 +6,9 @@ public class Pampa extends Veiculo implements TracaoIntegral {
     private boolean tracaoIntegral;
 
     public Pampa(String n) {
-        super(n);
+        int lv = 160;
+        int va = 0;
+        super(n,lv,va);
         cacambaFechada = true;
         tracaoIntegral = false;
     }

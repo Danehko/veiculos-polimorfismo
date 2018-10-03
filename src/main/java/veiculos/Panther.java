@@ -7,7 +7,9 @@ public class Panther extends Veiculo implements VeiculoAnfibio, TracaoIntegral, 
     private int temperaturaRefrigerador;
 
     public Panther(String n) {
-        super(n);
+        int lv = 100;
+        int va = 0;
+        super(n,lv,va);
         tracaoIntegral = false;
         capotaAberta = false;
         rodasRecolhidas = false;

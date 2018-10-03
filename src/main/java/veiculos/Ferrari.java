@@ -7,20 +7,16 @@ public class Ferrari extends Veiculo implements Conversivel {
     private boolean farolNeblina;
 
     public Ferrari(String n) {
-        super(n);
+        int lv = 320;
+        int va = 20;
+        super(n,lv,va);
         capotaAberta = false;
         farolNeblina = false;
     }
 
     @Override
     public boolean abrirCapota() {
-        if (capotaAberta){
-            System.out.println("capota já estava aberta da ferrari " + nome);
-            return false;
-        }
-        capotaAberta = true;
-        System.out.println("abrindo capota da ferrari "+ nome);
-        return true;
+
     }
 
     @Override
